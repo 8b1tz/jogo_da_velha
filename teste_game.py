@@ -17,7 +17,7 @@ class Game:
             if self.board[linha][coluna] == "-":
                 self.board[linha][coluna] = player
                 self.verificar(player)
-                if self.jogo_on == True:
+                if self.jogo_on:
                     if player == player1:
                         self.Menu(player2)
                     else:
